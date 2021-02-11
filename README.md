@@ -1,6 +1,6 @@
 # Backend Boilerplate
 
-- Express 4
+- Golang
 - Cypress
 - GitHub Actions
 
