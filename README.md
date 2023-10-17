@@ -14,6 +14,11 @@ Use it for setting up a take-home interview assignment or a portfolio project.
 - Cypress
 - GitHub Actions
 
+## Cypress test
+
+1. npm install. Install cypress dep. 
+2. npm run start. Start the go server.
+3. npm test. Test go endpoints with Cypress.
 
 ---
 
