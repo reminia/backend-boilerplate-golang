@@ -1,16 +1,18 @@
 package main
 
 import (
-    "fmt"
-    "log"
-    "net/http"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "pong")
+func handler(c *gin.Context) {
+	c.String(http.StatusOK, "pong")
 }
 
 func main() {
-    http.HandleFunc("/ping", handler)
-    log.Fatal(http.ListenAndServe(":8080", nil))
+	r := gin.Default()
+	r.GET("/ping", handler)
+
+	r.Run()
 }
