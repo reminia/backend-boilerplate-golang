@@ -5,3 +5,7 @@ cypress/screenshots
 cypress/support
 
 .idea
+
+# ignore go executable binary 
+server
+server.exe
